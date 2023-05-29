@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Domestic Animals Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+/* Main content */
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+select {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f2f2
+}
+/* Navbar Styles */
+nav {
+  background-color: #555;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar-logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.navbar-items {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-items li {
+  margin: 0 10px;
+}
+
+.navbar-items li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Form Styles */
+.animal-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #444;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Select Styles */
+select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-image: linear-gradient(to bottom, #ffffff 50%, #e6e6e6 100%);
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-position: calc(100% - 20px) center;
+  background-size: 15px;
+}
+
+select:focus {
+  outline: none;
+  border-color: deepskyblue;
+}
+
+/* Submit Button Styles */
+.submit-btn {
+  display: inline-block;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: deepskyblue;
+}
+
+
+.file-input {
+  position: relative;
+  display: inline-block;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.file-input input[type="file"] {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.file-input label {
+  display: block;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.file-input label:hover {
+  background-color: #3e8e41;
+}
+
+textarea {
+  height: 100px;
+}
+li {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+li:hover {
+  background-color: deepskyblue;
+}
+
+button {
+  background-color: #555; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+button:hover {
+  background-color:#008CBA; /* Dark blue */
+  color: white;
+}
+
+</style>
+<body style="background-color: aquamarine;">  
+  <nav>
+    <div class="navbar-container">
+      <form action="/gohome" method="get">
+        <button class="navbar-logo"><b>Animal Market</b></button>
+      </form>
+      <ul class="navbar-items">
+      </ul>
+    </div>
+  </nav>
+
+  
+  <main>
+    <h1>Register your pet</h1>
+    <form action="/purcase" method="POST" class="animal-form" enctype="multipart/form-data">
+      <h2>Post your animal for sale</h2>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="fname">
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+      <div class="form-group">
+        <label for="animal-type">Animal Type</label>
+        <select id="animal-type" name="animaltype">
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="bird">Bird</option>
+          <option value="fish">Fish</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="animal-image">Animal Image</label>
+        <div class="file-input">
+          <input type="file" id="animal-image" name="animal-image">
+          <label for="animal-image">Choose File</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="animal-description">Address</label>
+        <textarea id="animal-description" name="arr"></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Domestic Animals Online</p>
+  </footer>
+</body>
+</html>

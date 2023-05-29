@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+  </head>
+  <style>
+    form {
+      margin: 50px auto;
+      width: 300px;
+      text-align: center;
+    }
+
+    label {
+      display: inline-block;
+      width: 80px;
+      text-align: left;
+    }
+
+    .form input{
+      outline: 0;
+      border-radius: 10px;
+      background: #F2F2F2;
+      width: 100%;
+      border: 0;
+      margin: 0 0 15px;
+      padding: 20px; 
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    .form button {
+      text-transform: uppercase;
+      outline: 0;
+      border-radius: 10px;
+      margin-top: 20px;
+      padding: 20px;
+      background-color: mediumaquamarine;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .form button:hover, .form button:active, .form button:focus {
+      background-color: deepskyblue;
+      transition: all is ease 0s;
+    }
+
+    .form input:hover {
+      background-color: #D3F8F9;
+      transition: all is ease 0s;
+    }
+
+    .form {
+      font-family: 'Times New Roman', Times, serif;
+      position: relative;
+      z-index: 1;
+      background: #FFFFFF;
+      opacity: 99%;
+      max-width: 260px;
+      margin: 200px auto 100px;
+      padding: 10px 70px 30px 30px;
+      text-align: center;
+      box-shadow: 0 0 20px 0 rgba(0,0,0,0.2), 0 5px 5px 0 rgba(0,0,0,0.24);
+      border-radius: 10px;
+    }
+    .loo
+    {
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-left: 30px;
+    }
+    .lo
+    {
+         padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+  </style>
+  <body style="background-color: mediumaquamarine;">
+    <div class="form">
+      <h2>SIGNUP</h2>
+      <form   action="/home" method="post">
+        <input type="text" name="username" placeholder="E-mail" id="username"><br>
+        <input class="lo"type="password" name="password" placeholder="New password" id="password"><br>
+        <input class="lo"type="password" name="cpassword" placeholder="Confrom password" id="cpassword">
+        <button  class="lo" >Signup</button>
+      </form>
+      
+    </div>
+    
+  </body>
+</html>

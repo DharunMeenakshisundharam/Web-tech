@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Purchase Domestic Animals Online</title>
+</head>
+<style>
+    /* Global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+/* Main content */
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.animals {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.animals div {
+  flex-basis: 24%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.animals img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.animals h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.animals p {
+  font-size: 1.2em;
+}
+
+.animals button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.cart {
+  margin-top: 30px;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.cart h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.cart ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.cart li {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.cart p {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.cart button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+nav {
+  background-color: #555;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar-logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.navbar-items {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-items li {
+  margin: 0 10px;
+}
+
+.navbar-items li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+button {
+  background-color: #555; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+button:hover {
+  background-color:#008CBA; /* Dark blue */
+  color: white;
+}
+li {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+li:hover {
+  background-color: #555;
+
+}
+.dharun:hover
+{
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+</style>
+<body style="background-color: aquamarine;">
+  <nav>
+    <div class="navbar-container">
+      <form action="/gohome" method="get">
+        <button class="navbar-logo"><b>Animal Market</b></button>
+      </form>
+      <ul class="navbar-items">
+        <li>
+          <form action="/new" method="get" class="btnd">
+            <button ><b>New</b></button>
+          </form>
+        </li>
+        <li>
+          <form action="/" method="get" class="btnd1">
+          <button><b>Logout</b></button>
+        </form>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+	<main>
+		<section class="animals">
+			<div class="dharun">
+				<h2>Cats</h2>
+        <form action="/cat" method="get">
+        <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB89tM3nwL0YDmaQ7VKxMORXDfHxY_712rjg&usqp=CAU" alt="Cats"></button>
+      </form>
+			</div>
+      <div class="dharun">
+				<h2>Dogs</h2>
+        <form action="/dog" method="get">
+        <button><img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRPMKnq00NF_T7RusUNeLrSazRZM0S5O8_AOcw2iBTmYTxd3Q7uXf0sW41odpAKqSblKDMUMHGb8nZRo9g" alt="Dogs"></button>
+      </form>
+			</div>
+			<div class="dharun">
+				<h2>Birds</h2>
+        <form action="/birds" method="get">
+				<button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWFZAytp4Mz8NT300mL8tY8INjpWH75ZOvVQ&usqp=CAU" alt="Birds"></button>
+      </form>
+			</div>
+			<div class="dharun">
+				<h2>Fish</h2>
+        <form action="/fish" method="get">
+				<button><img src="https://i.guim.co.uk/img/media/693da12bc9c240bbea26f571c2a65700d177df83/0_153_3600_2160/master/3600.jpg?width=465&quality=85&dpr=1&s=none" alt="Fish"></button>
+      </form>
+			</div>
+      <div class="dharun">
+				<h2>Goat</h2>
+        <form action="/goat" method="get">
+        <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ3dUdKf77eQbZI0A0x5TxYDclj_V5Qv8jAA&usqp=CAU" alt="Birds"></button>
+      </form>
+			</div>
+      <div class="dharun">
+        <form action="/cow" method="get">
+				<h2>Cow</h2>
+				<button><img src="data:image/jpeg;base64,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" alt="Birds"></button>
+      </form>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<p>© 2023 Purchase Domestic Animals Online</p>
+	</footer>
+</body>
+</html>
